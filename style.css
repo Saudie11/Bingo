@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+} 
+a{
+    text-decoration: none;
+}
+/* section 1 start */
+nav{
+    background-color:white;
+    padding: 20px 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    display: flex;  
+}
+nav ul li{
+    margin-left: 40px;  
+}
+.title{
+    font-size: 30px;
+    color: darkgray;
+}
+nav ul li a{
+    color: darkgray;
+}
+nav ul li a:hover{
+    color: blue;
+}
+.Section1{
+    height: 600px;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Bingo/images/slider-bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Section1 p{
+    width: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Section1 h1{
+    width: 500px;
+    font-size: 60px;
+}
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+     background-color: turquoise;
+     border: 1px solid turquoise;
+     color: white;
+     font-size: 18px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    nav{
+        width: 320px;
+        padding: 15px;
+    }
+    nav ul li{
+      font-size: 10px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    nav ul li{
+        margin-left: 10px; 
+    }
+    .Section1{
+        width: 320px;
+    }
+    .Section1 p{
+        width: 300px;
+}
+.Section1 h1{
+    width: 300px;
+}
+}
+/* section 1 ended */
+/* section 2 start  */
+.offer{
+    height: 200px;
+    padding-top: 70px;
+    position: relative;
+    text-align: center; 
+}
+.offer p{
+    width: 450px;
+    color: darkgray;
+    padding-top: 20px;
+    margin-left: 470px;
+   
+} 
+.offer::before,.offer::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 630px;
+}
+.section2{
+    margin-top: 50px;
+    display: flex;
+justify-content: center;
+margin-left: 30px;
+
+}
+.section2 img{
+    height: 600px;
+}
+.boxer{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    margin-left: 40px;      
+}
+.box{
+    width: 350px;
+    height: 320px;
+    border: 1px solid whitesmoke;
+    margin: 20px 20px;
+    background-color: rgb(255,255,255);  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box h2{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.homeicon{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: rgb(40,171,227);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.boxer i{
+padding: 40px 0;
+    font-size: 25 px;
+    top:50px;
+    color: white;
+    border-radius: 50%;
+}
+.box:hover{
+    box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15)
+}
+.box:hover .homeicon{
+    background-color: white;
+    box-shadow:  0 5px 65px 0 rgba(0, 0, 0, 0.15);
+    
+}
+.box:hover .homeicon i{
+color:rgb(40,171,227);}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+     
+}
+/* section 2 ended */
+/* <!-- section 3 start --> */
+.Agency{
+    height: 150px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative; 
+    margin-bottom: 40px;  
+}
+.Agency p{
+    color: darkgray;
+    width: 500px;
+    padding-top: 30px;
+    margin-left: 470px;
+    
+} 
+.Agency::before,.Agency::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 600px;
+}
+.learn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more{
+    padding-left: 50px;   
+}
+.icon{
+    display: flex; 
+    padding-bottom: 30px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+     
+}
+/* <!-- section 3 Ended --> */
+.Section4{
+    height: 400px;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Bingo/images/call-to-action-bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Section4 p{
+    width: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Section4 h1{
+    width: 500px;
+    font-size: 30px;
+}
+.Award{
+    height: 150px;
+    text-align: center;
+    padding-top: 30px;
+  
+}
+.Award p{
+    color: darkgray;
+    width: 500px;
+    padding-top: 30px;
+    margin-left: 420px;
+} 
+.happy{
+    height: 400px;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+.client{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+.client i{
+font-size: 50px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.client p{
+    padding-top: 20px;
+    font-size: large;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+     
+}
+/* <!-- section 4 Ended --> */
+.section5{
+    margin-top: 50px;
+    height: 300px;
+    background-color: aqua;
+    color: white;
+    position: relative;
+}
+.seprate{
+    width: 400px;
+    text-align: center;
+ padding-top: 50px;
+ position: absolute;
+ left: 400px;
+}
+.seprate i{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.images img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 520px;
+}
+.testmain{
+    position: relative;  
+}
+.test{
+    position: absolute;
+    top:0;
+    left: 500px;
+    padding-top: 60px;
+}
+.test p{
+    margin-left: 25px;
+    padding-top: 10px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+     
+}
+/* section 6  */
+.section6{
+    margin-top: 200px;
+    height: 700px;
+    background-color: rgb(246,246,246);
+    padding: 0 100px;
+}
+.Section6 p{
+    width: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Section6 h1{
+    width: 500px;
+    font-size: 30px;
+}
+.Latest{
+    height: 150px;
+    padding-top: 30px;
+  
+}
+.Latest p{
+    width: 500px;
+    padding-top: 30px;
+    margin-left: 400px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.Latest h1{
+    margin-left: 530px;
+}
+.read{
+   display: grid;
+   grid-template-columns: repeat(3,1fr); 
+   column-gap: 20px    ;
+
+}
+.read img{
+    width: 100%;
+}
+
+.read h1{
+    padding-bottom: 20px;
+
+}
+.read button{
+margin-top: 20px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+     
+}
+/* Footer start  */
+ section{
+    height: 300px;
+    background-color: black;
+    padding-top: 20px ;
+    padding-left: 20px;
+    margin-top: 200px;
+
+
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap:1.5rem;
+    
+    
+}
+
+
+section a{
+    color: white
+}
+
+section h3{
+color:white;
+padding-top: 50px;
+padding-bottom: 20px;
+}
+
+section p{
+    color:white;
+    width: 300px;
+}
+
+.jj{
+    padding-top: 30px;
+}
+
+section li{
+    padding-bottom: 10px;
+}
+section li a:hover{
+    color: blue;
+
+}
+/* footer end  */
+.About{
+    height: 300px;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../Bingo/images/about-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.About h1{
+    padding-bottom: 50px;
+}
+.Services{
+    height: 300px;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../Bingo/images/about-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Services h1{
+    padding-bottom: 50px;
+}
+.Portfolio{
+    height: 300px;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../Bingo/images/about-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Portfolio h1{
+    padding-bottom: 50px;
+}
+.Team{
+    height: 300px;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../Bingo/images/about-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Team h1{
+    padding-bottom: 50px;
+}
+.Contact{
+    height: 300px;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../Bingo/images/about-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.Contact h1{
+    padding-bottom: 50px;
+}
